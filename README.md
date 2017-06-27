@@ -1,4 +1,8 @@
+# WeatherApp
+
 This is an app written for a job interview.
+
+## Purpose
 
 Main purpose of this app is to:
 - Type in a city (list provided by Google SearchBox)
@@ -8,14 +12,33 @@ Main purpose of this app is to:
 
 It uses RxJS, node, some 3rd api (cf `package.json` for the list)
 
+## Installation
+
 Once downloaded:
 - Go into the main directory
-- Fire `npm i`
-- `chmod 755 build.sh`
-- Execute `./build.sh` script
-- In your favorite browser, launch `index.html` from main directory
+- Fire
+```bash
+npm i
+```
 
-Some UT are also there. Just `npm test` in your console.
+- ```bash
+chmod 755 build.sh
+```
 
-You may have to manually create `/build/js` diretories if not present.
-Could be part of the script but that the role of the CI after all isn't it?
+- Execute
+```bash
+./build.sh
+```
+
+- You may have to manually create `/build/js` directories if not present.
+<br>Could be part of the script but that the role of the CI after all isn't it?
+
+## Launch
+In your favorite browser, launch `index.html` from main directory
+
+## Unit Tests
+Some UT are also there. Just
+```bash
+npm test
+```
+in your console.

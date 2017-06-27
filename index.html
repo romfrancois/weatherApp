@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BuildIt - WeatherApp</title>
+        <link type="text/css" rel="stylesheet" href="./res/css/main.css">
+        <link type="text/css" rel="stylesheet" href="./res/css/tippy.css">
+    </head>
+
+    <body>
+        <div id="app-container">
+            <div id="form">
+                <label>City to add:</label>
+                <input type="text" id="city-input">
+                <button id="add-location" disabled="disabled">Monitor weather for that location</button>
+            </div>
+
+            <div  id="map-canvas"></div>
+
+            <fieldset id="options">
+                <legend id="titleOptions">Options</legend>
+
+                <div>
+                    <input type="checkbox" id="displayGGMap" value="displayGGMap" checked>
+                    <label for="displayGGMap">Display a Google Maps map</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="convertDegrees" value="convertDegrees">
+                    <label for="convertDegrees">Convert Celcius degrees (default) to Fahrenheit</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="useGooglePhotoSearch" value="useGooglePhotoSearch">
+                    <label for="useGooglePhotoSearch">Use Google Photo Search instead of provided links from search results </label>
+                </div>
+            </fieldset>
+        </div>
+
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAK2RBm3ctCdu7Wn7sjnrn3pMJj34htY0&v=3.exp&libraries=places"></script>
+         <script type="text/javascript" src="build/js/weatherApp.js"></script>
+    </body>
+</html>
